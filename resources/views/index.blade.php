@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('title', 'Home')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+@section('content')
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
+    <x-frontend.products :products="$products" />
 
-<body>
-    <div class="container mx-auto my-10 bg-amber-200">
-        <x-frontend.products />
-    </div>
-</body>
-
-</html>
+@endsection
