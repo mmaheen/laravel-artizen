@@ -10,16 +10,8 @@
 </head>
 
 <body>
-    <div class="container mx-auto my-10 bg-gray-100">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, amet minus quidem hic, repellat deleniti
-        blanditiis voluptate, cumque temporibus nulla illo quibusdam cum doloremque illum veniam dicta animi ipsam
-        ratione!
-
-        <div class="carousel">
-            <img src="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
-                alt="">
-            <img src="" alt="">
-        </div>
+    <div class="container mx-auto my-10 bg-amber-200">
+        <x-frontend.products />
     </div>
 </body>
 
