@@ -57,7 +57,7 @@ class ProductFactory extends Factory
             //
             "name" => $name,
             "slug" => Str::slug($name),
-            "description" => $this->faker->paragraph,
+            "description" => $this->faker->realTextBetween(150, 300),
             "image" => "product_" . $this->faker->numberBetween(1, count(File::files(public_path("assets/images/products")))) . ".jpg",
             "price" => $this->faker->randomFloat(2, 100, 1000),
             "currency" => $this->faker->randomElement($currencies),

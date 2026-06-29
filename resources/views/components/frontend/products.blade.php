@@ -7,7 +7,7 @@
                    <div
                        class="border p-3 rounded-md bg-slate-100 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
                        <img class="w-full aspect-square object-cover rounded"
-                           src="{{ asset('storage/uploads/products/' . $product->image) }}" alt="">
+                           src="{{ asset('storage/uploads/products/' . $product->image) }}" alt="{{ $product->name }}">
 
                        <h4 class="mt-2 text-md text-blue-900 font-semibold">
                            {{ $product->name }}
@@ -22,5 +22,8 @@
            @endforeach
 
 
+       </div>
+       <div class="mt-8 flex justify-center">
+           {{ $products->links() }}
        </div>
    </section>
