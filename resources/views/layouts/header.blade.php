@@ -9,8 +9,8 @@
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8">
-                <a href="/products" class="font-medium text-gray-700 hover:text-blue-600 transition">
-                    Products
+                <a href="{{ route('dashboard') }}" class="font-medium text-gray-700 hover:text-blue-600 transition">
+                    Dashboard
                 </a>
 
                 <a href="/categories" class="font-medium text-gray-700 hover:text-blue-600 transition">

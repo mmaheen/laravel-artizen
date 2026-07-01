@@ -40,7 +40,7 @@
                     class="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
                 <!-- Price -->
                 <div>
@@ -51,6 +51,23 @@
                     <input type="number" name="price" id="price" step="0.01" min="0"
                         placeholder="Enter price"
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+
+                <!-- Currency -->
+                <div>
+                    <label for="currency" class="block mb-2 font-medium text-gray-700">
+                        Currency
+                    </label>
+
+                    <select name="currency" id="currency"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+
+                        <option value="৳">৳ (BDT)</option>
+                        <option value="$">$ (USD)</option>
+                        <option value="€">€ (EUR)</option>
+                        <option value="£">£ (GBP)</option>
+
+                    </select>
                 </div>
 
                 <!-- Stock -->

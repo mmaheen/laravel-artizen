@@ -15,6 +15,9 @@ class ProductController extends Controller
     public function index()
     {
         //
+        $products = Product::latest()
+            ->paginate(15);
+        return view("products.list", compact("products"));
     }
 
     /**
@@ -43,6 +46,7 @@ class ProductController extends Controller
         }
         // return $data;
         $product = Product::create($data);
+        return redirect()->route("products.index")->with("success", "Product created successfully");
     }
 
     /**

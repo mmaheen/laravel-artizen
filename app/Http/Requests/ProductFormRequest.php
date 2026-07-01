@@ -46,6 +46,12 @@ class ProductFormRequest extends FormRequest
                 'min:0.01',
             ],
 
+            'currency' => [
+                'required',
+                'string',
+                'in:£,€,$,৳'
+            ],
+
             'stock' => [
                 'required',
                 'integer',
@@ -71,6 +77,9 @@ class ProductFormRequest extends FormRequest
             'price.required' => 'Price is required.',
             'price.numeric' => 'Price must be a valid number.',
             'price.min' => 'Price must be greater than 0.',
+
+            'currency.in' => 'Please select a valid currency.',
+            'currency.required' => 'Currency is required.',
 
             'stock.required' => 'Stock is required.',
             'stock.integer' => 'Stock must be a whole number.',
