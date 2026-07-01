@@ -10,7 +10,9 @@
 </head>
 
 <body>
-    <div class="container mx-auto my-10">
+    <div class="container mx-auto my-8">
+
+        @include('layouts.header')
 
         @yield('content')
 
